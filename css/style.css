@@ -23,6 +23,7 @@ body {
   position: relative;
   background: #fcfafa;
   position: relative;
+  min-width: 483px;
 }
   body:before {
     content: "";
@@ -191,7 +192,7 @@ a {
 
 
 
-@media (min-width:800px) and (max-width:1119px) {
+@media (min-width:800px) and (max-width:1200px) {
   /* home section */
     #home-section {
     display: block;
@@ -243,7 +244,7 @@ a {
     }
 
     .circletext{
-      top: 10%;
+      top: 8%;
       left: 6%;
     }
 
@@ -332,11 +333,9 @@ a {
   margin: 150px 0 0;
   padding-top: 0;
   padding-bottom: 100px;
-  border-top: 1px solid #184033;
-  border-bottom: 1px solid #184033;
   background-color: #184033;
-  /* font-weight: 500; */
   color: #fcfafa;
+  font-weight: 300;
 }
 
 #about-section .img-fluid.img_profile {
@@ -351,6 +350,7 @@ a {
 .profile_pic{
   text-align: center;
   max-width: 280px !important;
+  position: relative;
 }
 
 .profile_pic img{
@@ -365,6 +365,17 @@ a {
   margin: 0;
 }
 
+.profile_pic_line{
+  width: 250px;
+  height: 330px;
+  border-radius: 150px 150px 0 0;
+  position: absolute;
+  color: transparent;
+  border: 1px solid #d7f03a;
+  top: -6px;
+  left: 3px;
+}
+
 .profile_text .profile_big{
   font-size: 40px;
   line-height: 48px;
@@ -374,7 +385,7 @@ a {
 }
 
 .profile_text .profile_big .underline{
-  /* box-shadow: inset 0 -13px 0 #d7f03a; */
+  box-shadow: inset 0 -4px 0 #bc9ef0;
 } 
 
 
@@ -389,18 +400,15 @@ a {
 .info{
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding-top: 30px;
 }
-
 
 
 .info .edu h3, .info .cer h3, .info .ex h3{
   font-size: 24px;
   padding-bottom: 10px;
 } 
-
-.info .edu{
-}
 
 /* works */
 
@@ -414,7 +422,7 @@ a {
 
 /* stats */
 #stats-section {
-  background-color: #fcfafa !important;
+  background-color: #bc9ef0 !important;
 }
 
 
