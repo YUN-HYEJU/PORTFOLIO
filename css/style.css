@@ -23,7 +23,6 @@ body {
   position: relative;
   background: #fcfafa;
   position: relative;
-  min-width: 483px;
 }
   body:before {
     content: "";
