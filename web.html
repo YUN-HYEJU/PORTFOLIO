@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+
+<head>
+	<link rel="shortcut icon" href="./images/portfolio_icon.png">
+	<title>BSFF WEB GUIDE</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		a {
+			text-decoration: none;
+			color: #2d2d2d;
+		}
+
+		img {
+			vertical-align: middle;
+		}
+
+		.fixed_box {
+			position: fixed;
+			bottom: 40px;
+			right: 30px;
+			width: 40px;
+		}
+
+		#web {
+			max-width: 1320px;
+			margin: 0 auto;
+		}
+
+		#web img {
+			width: 100%;
+			display: block;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="web">
+		<img src="./web_images/1.jpg" class="guide1">
+		<img src="./web_images/2.jpg" class="guide1">
+		<img src="./web_images/3.jpg" class="guide1">
+		<img src="./web_images/4.jpg" class="guide1">
+		<img src="./web_images/5.jpg" class="guide1">
+		<img src="./web_images/6.jpg" class="guide1">
+		<img src="./web_images/7.jpg" class="guide1">
+		<img src="./web_images/8.jpg" class="guide1">
+		<img src="./web_images/9.jpg" class="guide1">
+		<img src="./web_images/10.jpg" class="guide1">
+		<img src="./web_images/11.jpg" class="guide1">
+		<img src="./web_images/12.jpg" class="guide1">
+		<img src="./web_images/13.jpg" class="guide1">
+		<img src="./web_images/14.jpg" class="guide1">
+		<img src="./web_images/15.jpg" class="guide1">
+		<img src="./web_images/16.jpg" class="guide1">
+		<img src="./web_images/17.jpg" class="guide1">
+		<img src="./web_images/18.jpg" class="guide1">
+		<img src="./web_images/19.jpg" class="guide1">
+		<img src="./web_images/20.jpg" class="guide1">
+		<img src="./web_images/21.jpg" class="guide1">
+		<img src="./web_images/22.jpg" class="guide1">
+		<img src="./web_images/23.jpg" class="guide1">
+		<img src="./web_images/24.jpg" class="guide1">
+		<img src="./web_images/25.jpg" class="guide1">
+		<img src="./web_images/26.jpg" class="guide1">
+		<img src="./web_images/27.jpg" class="guide1">
+		<img src="./web_images/28.jpg" class="guide1">
+		<img src="./web_images/29.jpg" class="guide1">
+		<img src="./web_images/30.jpg" class="guide1">
+		<img src="./web_images/31.jpg" class="guide1">
+		<img src="./web_images/32.jpg" class="guide1">
+		<img src="./web_images/33.jpg" class="guide1">
+		<img src="./web_images/34.jpg" class="guide1">
+		<img src="./web_images/35.jpg" class="guide1">
+	</div>
+	<div class="fixed_box">
+		<a href="#web" class="top_btn">
+			<img src="./bi_images/top.png" alt="top">
+		</a>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+		integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script>
+		$(function () {
+			$('a[href*="#"]:not([href="#"])').click(function () {
+				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+					if (target.length) {
+						$('html, body').animate({
+							scrollTop: target.offset().top
+						}, 500);
+						return false;
+					}
+				}
+			});
+		});
+	</script>
+</body>
+
+</html>
