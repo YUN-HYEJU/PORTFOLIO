@@ -485,6 +485,10 @@ a {
   padding-bottom: 10px;
 } 
 
+.info h3{
+  color: #bc9ef0;
+}
+
 /* works */
 
 .portfolio-wrapper{
@@ -492,6 +496,16 @@ a {
   border-top: 2px solid #184033;
   border-bottom: 2px solid #184033;
   width: 100%;
+}
+
+#portfolio-section #posts a:hover .img_box{
+  border-color: #bc9ef0;
+  transition: all 0.2s;
+}
+
+#portfolio-section #posts a:hover .portfolio-item-content{
+  color: #bc9ef0;
+  transition: all 0.2s;
 }
 
 
