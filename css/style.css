@@ -340,6 +340,7 @@ a {
     padding-bottom: 14px;
   }
 
+
 /* about */
 #about-section{
   padding-bottom: 50px;
@@ -376,7 +377,9 @@ a {
 }
 
 #about-section .profile_text{
-  padding: 0 26px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20px;
 }
 
 
@@ -400,7 +403,17 @@ a {
   padding-top: 30px;
 }
 
+
 }
+
+@media (max-width:410px) {
+
+  #home-section .banner_left .banner_title{
+    right: -10px;
+  }
+  
+}
+
 
 
 
