@@ -3,10 +3,11 @@
 
 <head>
 	<link rel="shortcut icon" href="./images/portfolio_icon.png">
-	<title>PHOTO</title>
+	<title>PHOTOGRAPHY</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 	<style>
 		* {
 			margin: 0;
@@ -66,48 +67,194 @@
 		h1{
 			font-size: 40px;
 			line-height: 40px;
-			padding: 50px 0 40px;
+			padding: 60px 0 100px;
 		}
 
 		p{
 			padding-bottom: 40px;
 		}
 
+		.p1{
+			display: flex;
+			justify-content: space-between;
+		}
 
+		.photo{
+			width: 70%;
+		}
+
+		.p_text{
+			width: 30%;
+			box-sizing: border-box;
+			padding: 20px 30px;
+			text-align: left;
+		}
+
+		.p_text h2{
+			color: #bc9ef0;
+			font-size: 66px;
+			line-height: 66px;
+			padding-top: 12px;
+			padding-bottom: 30px ;
+		}
+
+		.p_text .info{
+			padding-bottom: 40px;
+		}
+
+		.p_text p{
+			font-size: 16px;
+			line-height: 26px;
+		}
+
+		.line{
+			display: inline-block;
+			width: 100px;
+			height: 2px;
+			background-color: #fcfafa;
+			margin: 50px 0 70px;
+		}
+
+
+		@media (max-width: 1200px) and (min-width: 800px) {
+			#photo .p1{
+				display: block;
+			}
+
+			#photo .photo{
+				width: 90%;
+			}
+
+			#photo .p_text{
+				width: 90%;
+				margin: 0 auto;
+				padding: 20px 0;
+			}
+
+			.p_text h2{
+				font-size: 40px;
+				line-height: 40px
+			}
+
+			.line{
+				margin: 10px 0 30px;
+			}
+		}
+
+
+		@media (max-width: 799px) {
+			#photo .p1{
+				display: block;
+			}
+
+			#photo .photo{
+				width: 100%;
+			}
+
+			#photo .p_text{
+				width: 90%;
+				margin: 0 auto;
+				padding: 20px 0;
+			}
+
+			.p_text h2{
+				font-size: 40px;
+				line-height: 40px
+
+			}
+				
+			.line{
+			margin: 10px 0 30px;
+			}
+	}
+
+	
 	</style>
 </head>
 
 <body>
-	<h1>PHOTOGRAPY</h1>
-
-	<p>
-		CANON 200D <br> 
-		+ <br>
-		18MM-55MM / 50MM F1.8 STM
-	</p>
 
 	<div id="photo">
+		<h1>PHOTOGRAPHY</h1>
+
+
+		<div class="p1">
+			  <!-- Swiper -->
+  <div class="swiper photo">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
 		<img src="./photo_images/1.jpg" class="guide1">
+	  </div
+	  >
+	  <div class="swiper-slide">
 		<img src="./photo_images/2.jpg" class="guide1">
+	  </div>
+
+	  <div class="swiper-slide">
 		<img src="./photo_images/3.jpg" class="guide1">
+	  </div>
+
+	  <div class="swiper-slide">
 		<img src="./photo_images/4.jpg" class="guide1">
+	  </div>
+
+	  <div class="swiper-slide">
 		<img src="./photo_images/5.jpg" class="guide1">
+	  </div>
+
+	  <div class="swiper-slide">
 		<img src="./photo_images/6.jpg" class="guide1">
+	  </div>
+
+	  <div class="swiper-slide">
 		<img src="./photo_images/7.jpg" class="guide1">
+	  </div>
+
+	  <div class="swiper-slide">
 		<img src="./photo_images/8.jpg" class="guide1">
+	  </div>
+
+	  <div class="swiper-slide">
 		<img src="./photo_images/9.jpg" class="guide1">
+	  </div>
+
+	  <div class="swiper-slide">
 		<img src="./photo_images/10.jpg" class="guide1">
+	  </div>
+
+	  <div class="swiper-slide">
 		<img src="./photo_images/11.jpg" class="guide1">
-	</div>
+	  </div>
+    </div>
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+  <div class="p_text">
+	<h2>2018</h2>
+	<p class="info">
+		CANON 200D <br> 
+		18MM-55MM STM / 50MM F1.8 STM
+	</p>	
+
+	<div class="line"></div>
+
+	<p>
+		2018년 3월 - 6월에 촬영한 사진입니다. <br>
+		부산의 곳곳을 돌아다니며 촬영한 사진들 중 일부로, 전과 전 영상애니메이션학과를 다닐 때 수강한 '영상구성기초' 수업의 과제물과 이곳저곳 다니며 찍은 사진들로 구성되어있습니다. 
+	</p>
+  </div><!-- p_text -->
+
+
 	<div class="fixed_box">
 		<a href="#photo" class="top_btn">
 		TOP	
 		</a>
 	</div>
 
-	<script src="https://code.jquery.com/jquery-1.12.4.min.js"
-		integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-	<script>
+
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+	integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+		<script>
 		$(function () {
 			$('a[href*="#"]:not([href="#"])').click(function () {
 				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -123,6 +270,27 @@
 			});
 		});
 	</script>
+
+	  <!-- Swiper JS -->
+	  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+	  <!-- Initialize Swiper -->
+	  <script>
+		var swiper = new Swiper(".photo", {
+		  scrollbar: {
+			el: ".swiper-scrollbar",
+			hide: true,
+     	 },
+		  autoplay: true,
+			autoplay: {
+       	 	delay: 2500,
+        	disableOnInteraction: false,
+		  },
+		  speed: 1000,
+      		loop: true,
+		});
+	  </script>
+	
 </body>
 
 </html>
