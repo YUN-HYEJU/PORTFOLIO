@@ -18,15 +18,35 @@
 			color: #2d2d2d;
 		}
 
+		body{
+			background-color: #d7e3e3;
+		}
+
 		img {
 			vertical-align: middle;
 		}
 
 		.fixed_box {
 			position: fixed;
-			bottom: 40px;
-			right: 30px;
-			width: 40px;
+			bottom: 26px;
+			right: 20px;
+		}
+
+		.fixed_box a.top_btn{
+			display: block;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 60px;
+			height: 60px;
+			background-color: #fff;
+			border: 2px solid #2d2d2d;
+			border-radius: 50%;
+			transition: all 0.2s;
+		}
+
+		.fixed_box a.top_btn:hover{
+			background-color: #6eb6e3;
 		}
 
 		#mobile {
@@ -56,7 +76,7 @@
 	</div>
 	<div class="fixed_box">
 		<a href="#mobile" class="top_btn">
-			<img src="./mobile_images/top.png" alt="top">
+			<img src="images/fixed_menu_top.png" alt="top">
 		</a>
 	</div>
 
