@@ -53,8 +53,22 @@ body, .unslate_co--site-inner {
   color: #184033; }
 
 ::selection {
-  background: #bc9ef0;
+  background-color: #bc9ef0;
   color: #184033; }
+
+
+::-webkit-scrollbar{
+width: 13px;
+  }
+
+::-webkit-scrollbar-thumb {
+  background-color: #bc9ef0;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: #184033;
+}
 
 a {
   -webkit-transition: .3s all ease;
