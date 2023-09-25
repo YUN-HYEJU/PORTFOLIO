@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="shortcut icon" href="./images/portfolio_icon.png">
+    <link rel="shortcut icon" href="./images/bsff_favicon.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +10,19 @@
         *{margin:0; padding:0;}
         #wrapper{
             width:1280px;
-            margin:80px auto;
-            
+            margin:30px auto;
         }
+
+        body{
+            background-color: #9fd0ee;
+        }
+
         a{text-decoration:none;
 				color:#000;}
-		#wrapper iframe{
+		#wrapper video{
             width:1280px;
             height:720px;
+            border: 2px solid #2d2d2d;
         }	
 		.fixed_box{position:fixed;
 				bottom:30px;
@@ -47,6 +52,11 @@
             background-color: #d7f03a;
         }
 
+        p {
+            text-align: center;
+            padding-top: 30px;
+        }
+
         @media (max-width:1320px){
             #wrapper{
                 width:100%;
@@ -68,6 +78,7 @@
     </style>
 </head>
 <body>
+    <p><img src="images/logo.png" alt="로고"></p>
     <div id="wrapper">
         <video src="./video/bsff_trailer.mp4" controls width="1320px" poster="trailer_thumb.jpg"></video>
     </div>
