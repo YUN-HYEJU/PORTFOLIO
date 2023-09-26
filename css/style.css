@@ -561,6 +561,11 @@ a {
   display: block;
 }
 
+/* footer */
+.footer-site-logo a{
+  color: #fcfafa !important;
+}
+
 
 .unslate_co--site-inner {
   margin-bottom: 300px;
